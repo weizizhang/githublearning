@@ -38,7 +38,7 @@ public class DemoServiceImpl implements DemoService {
 		pack.add("\t\"description\": \""+portal.getDescript()+"\",");
 		pack.add("\t\"version\": \""+portal.getVersion()+"\",");
 		pack.add("\t\"author\": \""+portal.getAuthor()+"\",");
-		pack.add("\t\"license\": \"ISC\",");
+		pack.add("\t\"license\": \"ISCN\",");
 		
 		try {
 			//创建文件夹
