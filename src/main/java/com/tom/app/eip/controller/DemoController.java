@@ -14,12 +14,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.tom.app.eip.config.Properties;
 import com.tom.app.eip.service.DemoService;
 
 @RestController
 @RequestMapping("/demo")
 public class DemoController {
-	
+	@Autowired
+	private Properties properties;
 	@Autowired
 	private DemoService demoService;
 	
@@ -56,4 +58,10 @@ public class DemoController {
 		}
 	}
 
+	@RequestMapping("/hello")
+	public Properties hello() {
+		System.out.println(properties.getTitle());
+		System.out.println(properties.getDescription());
+		return properties;
+	} 
 }
