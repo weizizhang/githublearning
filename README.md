@@ -1,3 +1,3 @@
 # githublearning
-为了学习github 而创建的项目，初次接触
+to study github
 with maven and springboot
